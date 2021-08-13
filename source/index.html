@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
     <title>Cat Energy</title>
 </head>
 <body>
     <header class="page-header">
-        <img class="page-header__logo" src="http://placehold.it/100x10" alt="Кэт Энерджи">
-        <img class="page-header__logo-image" src="http://placehold.it/100x10" alt="Кэт Энерджи">
-        <nav class="main-nav">
+        <div class="page-header__block">
+            <img class="page-header__block__logo" src="./images/logos/logo-mobile.png" alt="Cat Energy">
+            <img class="page-header__block__logo-image" src="./images/logos/main-logo.svg" alt="Cat Energy">
             <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+        </div>
+        <nav class="main-nav">
             <div class="main-nav__block">
                 <ul class="main-nav__list site_list">
                     <li class="site-list__item--active">
@@ -32,31 +35,31 @@
         </nav>
     </header>
     <main class="page-main">
-        <section class="page-main__form">
-            <div class="page-main__form__block block">
-                <h1 class="block__title">Функциональное
+        <section class="page-main__comparison">
+            <div class="page-main__comparison__block">
+                <h1 class="page-main__comparison__block__title">Функциональное
                 питание для котов</h1>
-                <span class="block__slogan">
+                <span class="page-main__comparison__block__slogan">
                     Занялся собой? Займись котом!
                 </span>
             </div>
-            <img src="http://placehold.it/100x100" alt="Пример продукции">
-           <a class="page-main__link" href="form.html">Подобрать программу</a>
+            <img class="page-main__comparison__block__image" src="http://placehold.it/100x100" alt="Пример продукции">
+           <a class="page-main__comparison__block__link" href="form.html">Подобрать программу</a>
         </section>
-        <section class="form-example">
-            <div class="form-example__block">
-                <h3 class="form-example__title">Похудение</h3>
-                <span class="form-example__title__block slim-block">
-                    Ваш кот жирный
+        <section class="page-main__form">
+            <div class="page-main__form__block">
+                <h3 class="page-main__form__block__title">Похудение</h3>
+                <span class="page-main__form__description slim-block">
+                    Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
                 </span>
-                <a href="catalog.html">
+                <a class="page-main__form__block__link" href="catalog.html">
                     Каталог Slim -->
                 </a>
-                <h3 class="pro-title">Набор массы</h3>
-                <span class="form-example__title__block pro-block">
+                <h3 class="page-main__form__block__title pro-title">Набор массы</h3>
+                <span class="page-main__form__block__description pro-block">
                     Ваш кот хилый
                 </span>
-                <a href="catalog.html">
+                <a class="page-main__form__block__link" href="catalog.html">
                     Каталог Pro -->
                 </a>
             </div>
@@ -64,44 +67,44 @@
         <section class="page-main__advantages advantages">
             <ul class="advantages__list">
                 <li class="advantages__item">
-                    <img class="advantages__image">
+                    <img src="" class="advantages__image" alt="">
                     <span class="advantages__description">
-                        Функциональное питание
+                        Функциональное питание содержит только полезные питательные вещества.
                     </span>
                 </li>
                 <li class="advantages__item">
-                    <img class="advantages__image">
+                    <img src="" class="advantages__image" alt="">
                     <span class="advantages__description">
-                        Функциональное питание
+                        Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
                     </span>
                 </li>
                 <li class="advantages__item">
-                    <img class="advantages__image">
+                    <img src="" class="advantages__image" alt="">
                     <span class="advantages__description">
-                        Функциональное питание
+                        Замените один-два приема обычной еды на наше функциональное питание.
                     </span>
                 </li>
                 <li class="advantages__item">
-                    <img class="advantages__image">
+                    <img src="" class="advantages__image" alt="">
                     <span class="advantages__description">
-                        Функциональное питание
+                        Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
                     </span>
                 </li>
             </ul>
         </section>
-        <section class="page-main__illustration">
-            <div class="page-main__illustration__block">
-                <h2>  Живой пример  </h2>
-                    <span class="page-main__illustration__description">
+        <section class="page-main__divider">
+            <div class="page-main__divider__block">
+                <h2 class="page-main__divider__block__title"> Живой пример </h2>
+                    <span class="page-main__divider__description">
                         Борис похудел
                     </span>
-                <div class="page-main__illustration__block__title">
+                <div class="page-main__divider__blocK__description">
                          5 кг
                 </div>
-                <div class="page-main__illustration__blocK__title">
+                <div class="page-main__divider__blocK__description">
                          60 дней
                 </div>
-                    <h3 class="page-main__illustration__title"> Затраты на питание: 15 000 руб.</h3>
+                    <h3 class="page-main__divider__wrapper__title"> Затраты на питание: 15 000 руб.</h3>
                 <div class="page-main__divider">
                     <img src="http://placehold.it/100x100" alt="Изменения кота">
                     Было Стало
@@ -113,7 +116,7 @@
                 Приглашаем дилеров к сотрудничеству!
             </div>
             <div class="contacts__title">
-                Ул.Большая Конюшенная, д.19/8 Санкт-Петербург
+                Ул. Большая Конюшенная, д.19/8 Санкт-Петербург
             </div>
         </section>
     </main>

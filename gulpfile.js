@@ -13,5 +13,5 @@ gulp.task('watch', function () {
     browserSync.init({
         server: './source/'
     });
-    gulp.watch('./source/scss/*/.scss', gulp.series('style'));
+    gulp.watch('./source/scss/**/*.scss', gulp.series('style'));
 });
