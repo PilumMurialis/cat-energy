@@ -1,5 +1,19 @@
 .page-header__block {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 65px;
+}
 
+.page-header__block__logo-image{
+  width: 101px;
+  height: 18px;
+}
+.page-header__toggle {
+  height: 18px;
+  width: 24px;
+  box-sizing: border-box;
+  border: none;
 }

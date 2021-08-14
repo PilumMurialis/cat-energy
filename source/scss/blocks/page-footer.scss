@@ -1,0 +1,39 @@
+.page-footer {
+  background-color: #cccccc;
+}
+.page-footer__logo {
+  display: flex;
+  justify-content: center;
+
+  padding: 40px 0 30px;
+}
+.social__list :not(:last-child) {
+  margin-right: 38px;
+}
+.social__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  margin-bottom: 18px;
+}
+.social__item {
+  list-style: none;
+}
+.social__link {
+  text-decoration: none;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px 30px;
+}
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #222222;
+
+  min-width: 100%;
+}

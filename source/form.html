@@ -1,10 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
+    <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Cat Energy</title>
 </head>
 <body>
-
+    <header class="page-header">
+        <div class="page-header__block">
+            <img class="page-header__block__logo" src="./images/logos/logo-mobile.png" alt="Cat Energy">
+            <img class="page-header__block__logo-image" src="./images/logos/main-logo.svg" alt="Cat Energy">
+            <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+        </div>
+        <nav class="main-nav">
+            <div class="main-nav__block">
+                <ul class="main-nav__list site_list">
+                    <li class="site-list__item--active">
+                        <a href="index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="catalog.html">
+                            Каталог продукции
+                        </a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="form.html">
+                            Подбор программы
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="form-main">
+    <section class="form-main__application">
+        <div class="form-main__application__main__block block">
+            <h2 class="block__title">Подбор программы</h2>
+            <span class="blocK__description"> Заполните анкету и мы подберем программу питания для вашего кота</span>
+            <label class="block__item">
+                <span class="block__item__description"> Имя:* </span> <input class="block__item__description__input" type="text" placeholder="Барсик">
+            </label>
+            <label class="block__item">
+                <span class="block__item__description"> Вес (кг):* </span> <input class="block__item__description__input" type="text" placeholder="7"></label>
+            <label class="block__item">
+                <span class="block__item__description"> Возраст (лет): </span>  <input class="block__item__description__input" type="text" placeholder="7"></label>
+        </div>
+        <div class="form-main__secondary__secondary__block secondary__block">
+            <label class="secondary__block__item">
+                <input type="radio" value="slim"> Похудение
+            </label>
+            <label class="secondary__block__item">
+                <input type="radio" value="pro">  Набор массы
+            </label>
+            <label class="secondary__block__item">
+                <input type="radio" value="advice"> Не знаю (нужен ваш совет)
+            </label>
+        </div>
+    </section>
+    <section class="form-main__user">
+        <div class="form-main__user__block user__block">
+            <h3 class="user__block__title">Контактные данные
+                <br>
+                (владельца кота)</h3>
+            <label class="user__block__item">
+                <span class="user__block__item__description">e-mail:*</span>  <input class="user__block__input" type="text" placeholder="kuklachev@gmail.com">
+            </label>
+            <label class="user__block__item">
+                <span class="user__block__item__description">телефон:*</span>  <input class="user__block__input" type="text" placeholder="8(960) 900-60-90">
+            </label>
+        </div>
+    </section>
+    <section class="form-main__comment comment">
+        <h2 class="comment__title">Комментарий</h2>
+        <textarea name="comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках своего кота"></textarea>
+    </section>
+    <section class="form-main__additional additional">
+        <div class="additional__block">
+            <h2 class="additional__block__title">Дополнительно</h2>
+            <div class="additional__block__list">
+                <label class="additional__block__list__item">
+                    <input class="additional__block__list__input" type="checkbox" checked name="sweetener">
+                    Сахарозаменитель
+                </label>
+                <label class="additional__block__list__item">
+                    <input class="additional__block__list__input" type="checkbox"  name="water">
+                    Питьевая вода
+                </label>
+                <label class="additional__block__list__item">
+                    <input class="additional__block__list__input" type="checkbox" name="milk">
+                    Молоко
+                </label>
+                <label class="additional__block__list__item">
+                    <input class="additional__block__list__input" type="checkbox" name="vitamins">
+                    Витамины
+                </label>
+            </div>
+            <button class="additional__block__button" type="button">Отправить заявку</button>
+            <small class="additional__block__legend">
+                <sup>*</sup> - Обязательные поля
+            </small>
+        </div>
+    </section>
+    <section class="form-main__contacts">
+        <div class="form-main__contacts__block">
+            <div class="form-main__contacts__block__title form-main__contacts__block__title__bold">
+            Приглашаем дилеров к сотрудничеству!
+            </div>
+            <div class="form-main__contacts__block__title">
+            Ул. Большая Конюшенная, д.19/8 Санкт-Петербург
+            </div>
+        </div>
+    </section>
+    <section class="page-main__map">
+    </section>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__logo">
+            <img src="./images/logos/main-logo.svg" alt="Продукция Кэт Энэрджи">
+        </div>
+        <div class="page-footer__social social">
+            <ul class="social__list">
+                <li class="social__item">
+                    <a class="social__link social__link--vk" href="https://vk.com/feed">
+                        <img src="./images/logos/m-vk.svg" alt="vk">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--instagram" href="https://instagram.com">
+                        <img src="./images/logos/m-insta.svg" alt="instagram">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--facebook" href="https://facebook.com">
+                        <img src="./images/logos/m-fb.svg" alt="facebook">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru">
+                HTML Academy
+                <img class="copyright__image" src="./images/logos/htmlacademy.svg" alt="HTML Academy">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
